@@ -5,9 +5,9 @@ This repository contains two simple microservices designed as a starting point f
 ## Architecture Overview
 
 ```
-┌─────────────────────┐         HTTP GET          ┌─────────────────────┐
+┌─────────────────────┐         HTTP GET           ┌─────────────────────┐
 │                     │  ────────────────────────> │                     │
-│  Node.js Service    │   /sum?a=X&b=Y (repeated) │  Python Service     │
+│  Node.js Service    │   /sum?a=X&b=Y (repeated)  │  Python Service     │
 │  (Express)          │  <──────────────────────── │  (FastAPI)          │
 │  Port: 3000         │      JSON response         │  Port: 8000         │
 └─────────────────────┘                            └─────────────────────┘
