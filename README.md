@@ -98,17 +98,56 @@ The `.env.example` files in each service directory serve as templates. The start
     └── README.md          # Service-specific docs
 ```
 
-## Expected Exercise Tasks
+---
 
-This repository serves as a foundation for practicing DevOps skills. Common tasks include:
+## Your Evaluation Task
 
-- **Containerization:** Create Dockerfiles for both services
-- **Orchestration:** Write a docker-compose.yml to run both services together
-- **CI/CD:** Set up GitHub Actions for automated testing and building
-- **Environment Management:** Properly handle environment variables across different deployment scenarios
-- **Networking:** Configure service discovery and inter-service communication in containers
-- **Monitoring:** Add health checks and logging
-- **Documentation:** Update configuration and deployment procedures
+Your task is to **fork this repository** and implement the following requirements:
+
+### Required Tasks
+
+1. **Containerization**
+   - Create a `Dockerfile` for the Python service
+   - Create a `Dockerfile` for the Node.js service
+   - Ensure both images build successfully and services run in containers
+
+2. **Orchestration**
+   - Create a `docker-compose.yml` file that runs both services together
+   - Properly configure service networking so the Node service can communicate with the Python service
+   - Ensure environment variables are correctly passed to containers
+   - Services should be accessible from the host machine
+
+3. **CI/CD Pipeline**
+   - Set up GitHub Actions workflows for both services
+   - Implement automated testing (linting, basic health checks)
+   - Build and push Docker images on successful builds
+   - (Bonus) Implement automatic versioning/tagging
+
+4. **Documentation**
+   - Update this README with:
+     - Instructions on how to build and run with Docker
+     - Instructions on how to use docker-compose
+     - Any environment variables that need to be configured
+     - How to verify the services are working correctly
+   - Document your CI/CD pipeline
+
+### Evaluation Criteria
+
+Your submission will be evaluated on:
+- **Correctness:** Do the services run properly in containers?
+- **Best Practices:** Are you following Docker and DevOps best practices?
+- **Environment Management:** Are secrets and configuration properly handled?
+- **Documentation:** Is your work well-documented and easy to follow?
+- **CI/CD Implementation:** Is the pipeline efficient and robust?
+
+### Submission
+
+When you're done:
+1. Ensure all changes are committed to your forked repository
+2. Share the link to your fork
+3. Include any additional notes or assumptions in your updated README
+
+Good luck! 🚀
 
 ## Notes
 
