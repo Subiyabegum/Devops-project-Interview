@@ -20,5 +20,5 @@ def sum_numbers(a: float, b: float):
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.getenv("PORT", 8005))
+    port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
